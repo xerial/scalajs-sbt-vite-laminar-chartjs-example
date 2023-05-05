@@ -19,6 +19,7 @@ lazy val `test-vite` = project
 
     externalNpm := {
       //scala.sys.process.Process(List("npm", "install", "--silent", "--no-audit", "--no-fund"), baseDirectory.value).!
+      scala.sys.process.Process("yarn", baseDirectory.value).!
       baseDirectory.value
     },
 

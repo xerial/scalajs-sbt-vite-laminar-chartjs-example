@@ -6,7 +6,7 @@ function isDev() {
 }
 
 function printSbtTask(task) {
-  const args = ["--error", "--batch", `print ${task}`];
+  const args = ["--error", `print ${task}`];
   const options = {
     stdio: [
       "pipe", // StdIn.
